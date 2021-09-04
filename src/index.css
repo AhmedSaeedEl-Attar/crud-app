@@ -1,13 +1,118 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family: sans-serif;
+  background-color: cadetblue;
+}
+
+.container{
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+}
+.container h2{
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 18px;
+  font-size: 35px;
+  font-weight: 200;
+}
+.container .course-content{
+  padding: 15px;
+  background-color: #f0f8ff7d;
+}
+.container .course-content .course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+.container .course-content .course-item .course-name {
+  width: 70%;
+  padding: 15px;
+  background: #fff;
+  color: darkviolet;
+}
+.container .course-content .course-item .edit-course {
+  width: 15%;
+  background: blue;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 17px;
+  cursor: pointer;
+  margin: 10px;
+}
+.container .course-content .course-item .update-course {
+  width: 15%;
+  background: #ef0606;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 17px;
+  cursor: pointer;
+}
+.container .course-content .submit{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.container .course-content .submit input:first-child{
+  width: 80%;
+  margin: 2px;
+  padding: 14px;
+  color: darkblue;
+  font-size: 20px;
+  border: 0;
+}
+.container .course-content .submit input:first-child:focus{
+  border: 0;
+  outline: 0;
+}
+.container .course-content .submit input:last-child{
+  cursor: pointer;
+  padding: 15px;
+  width: 18%;
+  font-size: 17px;
+  background: #1cb21c;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  border-radius: 10px;
+}
+.container .course-content .update-form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.container .course-content .update-form input:first-child{
+  width: 80%;
+  padding: 15px;
+  border: 1.5px solid transparent;
+  transition: all 0.5s;
+}
+.container .course-content .update-form input:first-child:focus{
+  border: 1.5px solid rgb(57, 106, 251);
+background-color: #eee;
+outline: 0;
+}
+.container .course-content .update-form input:last-child{
+  width: 18%;
+  padding: 15px;
+  border: 0;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
+  background: blue;
+  font-size: 17px;
 }
